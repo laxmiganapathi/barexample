@@ -16,7 +16,6 @@
 			<url>https://maven.pkg.github.com/laxmiganapathi/barexample</url>
 			</repository>
 		</distributionManagement>
-		<maven.compiler.target>1.8</maven.compiler.target>
 		<sonar.organization>mytestapp001</sonar.organization>
   		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<sonar.projectKey>mytestapp001_mytestapp003</sonar.projectKey>
