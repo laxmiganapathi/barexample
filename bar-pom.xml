@@ -50,7 +50,7 @@
                         <configuration>
                             <artifacts>
                                 <artifact>
-                                    <file>${project.build.directory}//${project.artifactId}-${project.version}.bar</file>
+                                    <file>${project.build.directory}/${project.artifactId}-${project.version}.bar</file>
                                     <type>bar</type>
                                 </artifact>
                             </artifacts>
