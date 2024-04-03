@@ -50,7 +50,7 @@
                         <configuration>
                             <artifacts>
                                 <artifact>
-                                    <file>${project.build.directory}//${project.artifactId}-${project.version}.bar</file>
+                                    <file>${project.build.directory}/${project.artifactId}-${project.version}.bar</file>
                                     <type>bar</type>
                                 </artifact>
                             </artifacts>
@@ -96,24 +96,15 @@
 				 </dependency>
 			    </dependencies>
             </plugin>
-			 <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-install-plugin</artifactId>
-				<version>3.0.0-M1</version>
-				<configuration>
-					<skip>false</skip>
-					<file>${project.build.directory}/${project.artifactId}-${project.version}.bar</file>
-				</configuration>
-			</plugin>
             <!-- Add this plugin for deployment -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
-                <version>3.0.0-M1</version>
+                <version>3.</version>
                 <configuration>
                     <skip>false</skip>
 					<file>${project.build.directory}/${project.artifactId}-${project.version}.bar</file>
-			    </configuration>
+                 </configuration>
             </plugin>
         </plugins>
     </build>
@@ -127,11 +118,5 @@
             </snapshots>
         </repository>
     </distributionManagement>
- <pluginRepositories>
-    <pluginRepository>
-           <id>github</id>
-            <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/laxmiganapathi/barexample</url>
-    </pluginRepository>
-</pluginRepositories>
+ 
 </project>
