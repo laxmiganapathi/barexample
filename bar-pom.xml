@@ -6,6 +6,33 @@
     <artifactId>mybar</artifactId>
     <version>0.1.4</version>
     <packaging>pom</packaging>
+<!-- 	<dependencies>
+	       
+		<dependency>
+		  <groupId>com.ibm.server</groupId>
+		  <artifactId>jplugin2</artifactId>
+		  <version>12.0.8.0</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.ibm.common</groupId>
+		  <artifactId>integrationapi</artifactId>
+		  <version>12.0.8.0</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.ibm.server</groupId>
+		  <artifactId>javacompute</artifactId>
+		  <version>12.0.8.0</version>
+		</dependency>
+	</dependencies> -->
+	<repositories>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/laxmiganapathi/barexample</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <build>
         <plugins>
             <!-- Attach the BAR file as an artifact -->
@@ -52,22 +79,22 @@
                     </arguments>
                 </configuration>
                 <dependencies>
-                    <dependency>
-                      <groupId>com.ibm.server</groupId>
-                      <artifactId>jplugin2</artifactId>
-                      <version>12.0.8.0</version>
-                    </dependency>
-                    <dependency>
-                      <groupId>com.ibm.common</groupId>
-                      <artifactId>integrationapi</artifactId>
-                      <version>12.0.8.0</version>
-                    </dependency>
-                    <dependency>
-                      <groupId>com.ibm.server</groupId>
-                      <artifactId>javacompute</artifactId>
-                      <version>12.0.8.0</version>
-                    </dependency>
-                </dependencies>
+				  <dependency>
+                   <groupId>com.ibm.server</groupId>
+				  <artifactId>jplugin2</artifactId>
+				  <version>12.0.8.0</version>
+				 </dependency>
+				 <dependency>
+				  <groupId>com.ibm.common</groupId>
+				  <artifactId>integrationapi</artifactId>
+				  <version>12.0.8.0</version>
+				 </dependency>
+				 <dependency>
+				  <groupId>com.ibm.server</groupId>
+				  <artifactId>javacompute</artifactId>
+				  <version>12.0.8.0</version>
+				 </dependency>
+			    </dependencies>
             </plugin>
             <!-- Add this plugin for deployment -->
             <plugin>
@@ -85,6 +112,16 @@
             <id>github</id>
             <name>GitHub Packages</name>
             <url>https://maven.pkg.github.com/laxmiganapathi/barexample</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </distributionManagement>
+<pluginRepositories>
+    <pluginRepository>
+        <id>github</id>
+        <name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/laxmiganapathi/barexample</url>
+    </pluginRepository>
+</pluginRepositories>
 </project>
