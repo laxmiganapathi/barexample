@@ -124,3 +124,11 @@
 </distributionManagement>
 
 </project>
+<profiles>
+	<profile>
+		<id>release</id>
+		<properties>
+			<maven.deploy.skip>true</maven.deploy.skip>
+		</properties>
+	</profile>
+</profiles>
