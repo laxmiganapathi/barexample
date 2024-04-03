@@ -53,7 +53,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TESTSECRET }}
       - name: publish artifact 
-        run: mvn org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy-file -Dfile=target\mybar-0.1.4.bar  -DgroupId=com.example -DartifactId=mybar  -Dversion=0.1.4-SNAPSHOT -Dpackaging=bar -Durl=https://maven.pkg.github.com/laxmiganapathi/barexample -DrepositoryId=github 
+        run: mvn deploy  -f bar-pom.xml
         env:
           GITHUB_TOKEN: ${{ secrets.TESTSECRET }}
 
