@@ -1,1 +1,2 @@
-# barexample
+Bar file example
+"# barproject" 
