@@ -14,7 +14,7 @@
             <repository>
                <id>github</id>
 		<name>GitHub Packages</name>
-		<url>https://maven.pkg.github.com/balaavekshaa/testing</url>
+		<url>https://github.com/laxmiganapathi/barexample</url>
             </repository>
         </repositories>
     </profile>
