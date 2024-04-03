@@ -6,7 +6,7 @@
     <artifactId>mybar</artifactId>
     <version>0.1.4</version>
     <packaging>pom</packaging>
-<!-- 	<dependencies>
+	<dependencies>
 	       
 		<dependency>
 		  <groupId>com.ibm.server</groupId>
@@ -23,7 +23,7 @@
 		  <artifactId>javacompute</artifactId>
 		  <version>12.0.8.0</version>
 		</dependency>
-	</dependencies> -->
+	</dependencies>
 	<repositories>
         <repository>
             <id>github</id>
@@ -103,7 +103,8 @@
                 <version>3.0.0-M1</version>
                 <configuration>
                     <skip>false</skip>
-                </configuration>
+					<file>${project.build.directory}/${project.artifactId}-${project.version}.bar</file>
+                 </configuration>
             </plugin>
         </plugins>
     </build>
@@ -117,11 +118,5 @@
             </snapshots>
         </repository>
     </distributionManagement>
-<pluginRepositories>
-    <pluginRepository>
-        <id>github</id>
-        <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/laxmiganapathi/barexample</url>
-    </pluginRepository>
-</pluginRepositories>
+ 
 </project>
